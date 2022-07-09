@@ -1,0 +1,28 @@
+.modal_btns{
+    text-align: center;
+
+    & button{
+        margin: 6px;
+    }
+}
+
+
+.img{
+    height: auto; 
+    width: auto; 
+    max-width: 160px; 
+    max-height: 160px;
+    margin-bottom: 12px;
+}
+
+.success{
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .modal_btns{
+        display: flex;
+        flex-direction: row;
+    }
+}

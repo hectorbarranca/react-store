@@ -1,0 +1,25 @@
+.form_container{
+    text-align: left;
+    display: inline-block;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 330px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 14px;
+    margin-top: 30px;
+}
+
+.form_sub_container{
+    position: relative;
+    padding:6px;
+}
+
+.btnSubmit{
+    margin-top: 10px;
+}
+
+.alert{
+    margin-top: 14px
+}

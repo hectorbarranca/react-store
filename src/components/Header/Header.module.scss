@@ -1,0 +1,221 @@
+$backColor: #333;
+
+.background{
+    background-color: $backColor;
+    padding: 5px 15px;
+}
+
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+    //max-width: 1080px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+    .grid_left{
+        height: 100%;
+        
+        .logo{
+            position: relative;
+            display:inline-block;
+            top: -1px;
+            cursor: pointer;
+
+            &>svg{
+                height: 40px;
+            }
+        }
+    
+        .logo_min{
+            position: relative;
+            display:none;
+            top: -1px;
+            cursor: pointer;
+
+            &>svg{
+                height: 40px;
+            }
+        }
+    }
+
+
+
+    .grid_middle{
+        flex: 1;
+        color: #fff;
+        height: 100%;
+        position: relative;
+
+        &>div{
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    
+        .btn_search{
+            &,&:active,&:focus,&:hover{
+                border-color: rgb(206, 212, 218);
+                border-style: solid;
+                border-width: 1px;
+                border-left: none;
+            }
+        }
+    }
+
+
+
+    .grid_right{
+        display: flex;
+        height: 40px;
+        color: #fff;
+        vertical-align: middle;
+
+        button,
+        a.cart_container{
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            min-width: 40px;
+            min-height: 43px;
+            border-radius: 3px;
+            margin-right: 4px;
+            margin-left: 1px;
+
+            &:active{
+                box-shadow: 0 0 0 4px #f8f9fa63;
+            }
+        }
+
+        .btn_all_continer{
+            display: none;
+        }
+
+        .login{
+            display: inline-block;
+            position: relative;
+            height: 40px;
+            min-width: 40px;
+            font-weight: bold;
+
+            div{
+                display:block;
+                text-align: center;
+            }
+            div:last-child{
+                font-size: 0.6em;
+                color: #fff;
+            }
+        }
+
+        .cart{
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            width: 40px;
+            text-align: center;
+        }
+        .cart_num{
+            position:absolute;
+            text-align: center;
+            color: $backColor;
+            left: .33em;
+            right: 0px;
+            top: 5px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+.dropdown{
+    background-color: $backColor;
+    &>a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+            background-color: #222;
+        }
+    }
+}
+
+
+.recaptcha{
+    margin-bottom: -11px;
+}
+
+
+
+
+@media screen and (max-width:720px){
+    .grid{
+        .grid_right{
+            .login_container,
+            .cart_container{
+                display: none;
+            }
+            .btn_all_continer{
+                display: block;
+            }
+        }
+
+        .grid_left{
+            .logo{
+                display:none;
+            }
+            .logo_min{
+                display:inline-block;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1000px){
+    .grid{
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+@media screen and (min-width:1050px){
+    .grid{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
+@media screen and (min-width:1100px){
+    .grid{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
+@media screen and (min-width:1200px){
+    .grid{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+@media screen and (min-width:1250px){
+    .grid{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width:1300px){
+    .grid{
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+}
+@media screen and (min-width:1350px){
+    .grid{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}

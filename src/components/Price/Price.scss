@@ -1,0 +1,15 @@
+div.price-containter{
+    display: flex;
+}
+div.price-int{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.7em;
+    padding-right: 0.15em;
+}
+div.price-decimal{
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 0.45em;
+    font-size: 0.9em;
+}

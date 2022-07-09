@@ -1,0 +1,45 @@
+.container{
+    text-align: left;
+}
+
+.name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.price{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.brand,
+.brand_model,
+.model{
+    font-weight: bold;
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 20px;
+}
+
+.brand{
+    margin-top: 20px;
+}
+
+.stock{
+    margin-top: 20px;
+    position: relative;
+    &>div{
+        display: inline-block;
+
+        &:first-child{
+            position: relative;
+            top: 1px;
+            font-weight: bold;
+        }
+    }
+}
+
+.btns button{
+    margin: 6px 12px;
+    margin-left: 0px;
+}
