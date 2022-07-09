@@ -1,5 +1,5 @@
 export default async (token='') => {
-    const url = window.location.hostname=='localhost' ? 'http://localhost/MegaStore/Public/store/api/store.php' : '/store/api/store.php';
+    const url = window.location.hostname=='localhost' ? 'https://sheeppie.com/store/api/store.php' : '/store/api/store.php';
     let r = await fetch(url,{
         method: 'POST',
         body: JSON.stringify({
@@ -7,5 +7,6 @@ export default async (token='') => {
         })
     });
     r = await r.json();
+    console.log(r);
     return r;
 }

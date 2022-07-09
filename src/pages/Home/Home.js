@@ -6,7 +6,7 @@ import { useLanguage } from 'context/LanguageContext';
 import { replaceAll } from "services/functions";
 
 export default () => {
-    const { banners, logo_png, logo_min_png } = useConfig();
+    const { banners, logo_png, logo_min_png, store_url } = useConfig();
     const lang = useLanguage().language.banners;
 
     let $banners = [];

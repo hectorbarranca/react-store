@@ -8,9 +8,9 @@ import {LanguageProvider,useLanguage} from './context/LanguageContext';
 import {UserProvider} from './context/UserContext';
 
 function Config(){
-	const {isLoading} = useConfig();
+	const {isLoading,api_url} = useConfig();
 	return isLoading ? (<></>) : (
-		<LanguageProvider>
+		<LanguageProvider api_url={api_url}>
 			<Language/>
 		</LanguageProvider>
 	);

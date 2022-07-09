@@ -1,17 +1,18 @@
 import React, {useState, useEffect, createContext, useMemo} from "react";
 
+
 import getLanguage from 'services/getLanguage.js';
 
 const LanguageContext = createContext();
 
-export const LanguageProvider = ({children}) => {
+export const LanguageProvider = ({children, api_url}) => {
     const [lang,setLang] = useState(localStorage.getItem('language') || '');
     const [language,setLanguage] = useState({});
     const [loading,setLoading] = useState(true);
 
     useEffect(()=>{
         if(loading){
-            getLanguage(lang).then(c=>{
+            getLanguage(api_url,lang).then(c=>{
                 localStorage.setItem('language',c.lang);
                 setLang(c.lang);
                 setLanguage(c.data);

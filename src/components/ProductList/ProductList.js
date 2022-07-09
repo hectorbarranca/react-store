@@ -1,15 +1,15 @@
-import React, {useRef, useEffect} from "react";
-import styles from './ProductList.module.scss';
-import { useConfig } from "context/ConfigContext";
-import { useLocation } from "wouter";
-import { setPage } from "services/page";
-import { pmoney, slideHide, slideShow } from "services/functions";
-import SelectQuantity from "components/SelectQuantity/SelectQuantity";
+import React, {useRef, useEffect} from "react"
+import styles from './ProductList.module.scss'
+import { useConfig } from "context/ConfigContext"
+import { useLocation } from "wouter"
+import { setPage } from "services/page"
+import { pmoney, slideHide, slideShow } from "services/functions"
+import SelectQuantity from "components/SelectQuantity/SelectQuantity"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faShoppingCart, faTrash } from '@fortawesome/free-solid-svg-icons'
-import { Button } from "react-bootstrap";
-import { useLanguage } from "context/LanguageContext";
-import { useUser } from "context/UserContext";
+import { Button } from "react-bootstrap"
+import { useLanguage } from "context/LanguageContext"
+import { useUser } from "context/UserContext"
 
 export function ProductList({id=0, name='', price=0, date=0, stock=0, quantity=1, dateCart=0, status=true, type='cart', useSlide=true }){
     const [,setLocation] = useLocation();
